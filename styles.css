@@ -1,0 +1,474 @@
+body {
+    margin: 0;
+    margin-top: 90px;
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+.nav {
+    height: 90px;
+    background-image: linear-gradient(45deg, black, black, rgb(0, 0, 136));
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-around; 
+    padding: 0 20px; 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+.nav a {
+    color: white;
+    font-size: 20px;
+    font-family: "Protest Revolution", sans-serif;
+    text-decoration: none; 
+    padding: 10px; /* Adjust padding for spacing */
+}
+
+.nav a img {
+    vertical-align: middle; /* Align the logo properly */
+}
+.planet{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    margin: 0%;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50px 150px 150px 500px 400px 150px; /* 6 equal columns */
+    grid-template-rows: 50px 150px 50px 50px 50px 50px 50px;
+    width: 90%;
+    max-width: 1800px;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional for visibility */
+    padding: 30px;
+    overflow: hidden; 
+    text-align: center;
+}
+
+@media (min-width: 1441px) and (max-width: 1920px)  {
+    .container{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 70px 120px 120px 300px 300px 120px; /* Adjusted for laptop screen sizes */
+        grid-template-rows: 50px 150px 50px 50px 50px 50px 50px;
+        width: 90%;
+        max-width: 1400px;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        overflow: hidden; 
+        text-align: center;
+    }
+}
+
+
+#item1, #item6 {
+    font-size: 40px;
+    grid-column: span 3; /* Title spans 2 columns */
+    grid-row: 1;
+    align-self: center;
+}
+#item6{
+    grid-column: 6 / span 2;
+}
+
+#item2 {
+    font-size: 18px;
+    grid-column: 1 / span 2; /* Adjust layout if needed */
+    grid-row: 2;
+    text-align: left;
+    list-style-type: none;
+}
+#item2 li{
+    padding: 5px;
+}
+
+.item-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 25px; /* Reduce padding */
+    align-self: center;
+    justify-self: center;
+}
+#item3{
+   place-items: center;
+    grid-row: 3 / span 5;
+}
+#item4{
+    place-items: left;
+    padding-top: 70px;
+    grid-column: 3;
+    grid-row: 2;
+    text-align: left;
+}
+#item5{
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 5;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 25px;
+    margin-left: -70px;
+}
+#item5 p{
+    padding: 25px;
+}
+
+#item7{
+    grid-column: 6 / span 2;
+    grid-row: 3 / span 5;
+    padding-top: 300px;
+    font-size: 25px;
+    list-style-type: none;
+    text-align: left;
+}
+#item7 li{
+    padding: 30px;
+}
+#item8{
+    grid-column: 4 / span2;
+    grid-row: 1;
+    margin-left: -350px;
+    opacity: 0;
+    font-family: paprika;
+}
+#item9 {
+    grid-column: 4 / span 3; /* Centered planet spans 5 columns */
+    grid-row: 5 / span 3; /* Spans multiple rows */
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 600px;
+}
+#item9:hover ~ #item8{
+    opacity: 1;
+}
+
+#earth, #saturn, #neptune{
+    background-image: url("accests/bg3.jpg");
+}
+#mercury, #jupiter, #uranus{
+    background-image: url("./accests/bg2.jpg");
+}
+#venus, #mars{
+    background-image: url("./accests/bg.jpg");
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #item1 {
+        font-size: 24px;
+        grid-column: span 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    #item2 {
+        font-size: 16px;
+        grid-column: span 1;
+        grid-row: 2;
+        text-align: left;
+    }
+
+    #item4 {
+        padding-top: 70px;
+        grid-column: span 1;
+        grid-row: 2;
+        text-align: left;
+        font-size: 14px;
+        margin-left: -180px;
+    }
+
+    #item9 {
+        grid-column: span 1;
+        grid-row: 4;
+        max-width: 90%;
+    }
+
+    #item6 {
+        grid-column: span 1;
+        grid-row: 5;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    #item7 {
+        margin-top: -250px;
+        grid-column: span 1;
+        grid-row: 6;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* Hide other items */
+    #item3, #item5, #item8 {
+        display: none;
+    }
+
+    #earth,
+    #saturn,
+    #neptune,
+    #mercury,
+    #jupiter,
+    #uranus,
+    #venus,
+    #mars {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #item1 {
+        font-size: 20px;
+    }
+
+    #item6 {
+        font-size: 16px;
+    }
+
+    #item3 {
+        font-size: 16px;
+    }
+
+    #item4 {
+        font-size: 14px;
+    }
+
+    #item5 {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+#item6 {
+    grid-column: span 1;
+    grid-row: 5;
+    font-size: 18px;
+    text-align: left;
+}
+
+#item7 {
+    grid-column: span 1;
+    grid-row: 6;
+    font-size: 20px;
+    text-align: left;
+}
+
+    #item8 {
+        font-size: 18px;
+    }
+
+    #item9 {
+        max-width: 80%;
+    }
+}
+.main{
+    height: 700px;
+}
+footer{
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+footer a{
+    padding: 50px;
+}
+#top {
+    margin: 0; /* Remove extra margins */
+    padding: 0; /* Remove padding */
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#top h1 {
+    margin: 0; /* Remove extra margin from the heading */
+    padding: 20px 0; /* Add space only around the text */
+    font-size: 3rem; /* Adjust font size as needed */
+    font-family:  "Libre Baskerville", serif;
+}
+
+.home-navbar {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 70px;
+    padding: 10px 0; /* Adjust padding as needed */
+    background-image: linear-gradient(rgb(14, 14, 23), rgb(28, 28, 113));
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-navbar a {
+    color: white;
+    padding: 0 15px; /* Reduce side padding for links */
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.home-navbar a:hover {
+    color: rgb(182, 15, 43);
+}
+
+.content {
+    margin: 0 auto;
+    padding: 20px 0; /* Add spacing only where needed */
+    font-size: 50px;
+    font-family: paprika;
+}
+.content h2{
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+.content p{
+    font-size: 20px;
+}
+
+button {
+    margin: 20px 0;
+    padding: 15px 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background: transparent;
+    color: azure;
+    cursor: pointer;
+    border: 2px solid azure; /* Add a border for better visibility */
+    border-radius: 25px;
+}
+.home-head{
+    display: grid;
+    grid-template-columns: 200px auto;
+    place-items: center;
+}
+.menu-options{
+    background-image: linear-gradient(45deg, rgb(0, 65, 82),  rgb(0, 66, 46), rgb(18, 0, 82) );
+    height: 900px;
+    padding: 100px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+}
+.menu1, .menu2{
+    height: 600px;
+    width: 400px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5%;
+    transition: transform 0.3s ease;
+}
+.menu1:hover{
+    transform: translate(-20px, -20px);
+}
+.menu2:hover{
+    transform: translate(+20px, -20px);
+}
+.footer-item .name{
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    .body {
+        margin-top: 0;
+    }
+
+    .home-head h1 {
+        font-size: 24px;
+    }
+
+    .home-navbar {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        height: 100px;
+    }
+
+    .home-navbar a {
+        margin: 10px 0;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    #Menu .menu-options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu1, .menu2 {
+        width: 100%;
+        height: auto;
+    }
+    .menu1 img, .menu2 img{
+        margin-top: 10px ;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .menu-options{
+        height: auto;
+    }
+    /* Footer Styles */
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin-bottom: 20px;
+    }
+
+    .item img {
+        width: 50px; /* Adjust the size of the icons */
+        height: auto;
+    }
+
+    .footer-container .item p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
