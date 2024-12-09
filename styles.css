@@ -25,7 +25,7 @@ body {
     font-size: 20px;
     font-family: "Protest Revolution", sans-serif;
     text-decoration: none; 
-    padding: 10px; /* Adjust padding for spacing */
+    padding: 8px; /* Adjust padding for spacing */
 }
 
 .nav a img {
@@ -324,7 +324,7 @@ footer a{
 .home-navbar {
     margin: 0;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     height: 70px;
     padding: 10px 0; /* Adjust padding as needed */
     background-image: linear-gradient(rgb(14, 14, 23), rgb(28, 28, 113));
@@ -399,6 +399,22 @@ button {
 .footer-item .name{
     font-size: 30px;
 }
+#footer h2{
+    font-family:  "Libre Baskerville", serif;
+}
+#explorer{
+    margin: 0%;
+    padding: 20px;
+    background-image: linear-gradient(45deg ,rgb(62, 0, 0),rgb(176, 89, 89));
+    text-align: center;
+    font-size: 30px;
+    font-family: paprika;
+}
+#explorer h1{
+    font-size: 70px;
+    font-family: papyrus;
+    font-weight: bold;
+}
 @media (max-width: 768px) {
     .body {
         margin-top: 0;
@@ -410,13 +426,14 @@ button {
 
     .home-navbar {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         align-items: center;
         height: 100px;
     }
 
     .home-navbar a {
         margin: 10px 0;
+        font-size: 20px;
     }
 
     .content img {
@@ -470,5 +487,58 @@ button {
     .footer-container .item p {
         font-size: 14px;
         margin-top: 10px;
+    }
+}
+@media (max-width: 480px){
+    #footer a img{
+        width: 30px;
+    }
+    #footer p{
+        font-size: 15px;
+    }
+    footer img{
+        width: 100px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    #Menu img{
+        width: 100px;
+        height: 100px;
+    }
+    #Menu h2{
+        font-size: 20px;
+    }
+    #Menu{
+        width: 100%;
+    }
+    .content p{
+        font-size: 10px;
+    }
+    #top h1{
+        font-size: 30px;
+    }
+    #top #logo{
+        width: 70px;
+        margin-left: -100px;
+    }
+    body{
+        margin-right: 0%;
+        
+    }
+    #footer h2{
+        font-size: 30px;
+    }
+    .nav a img{
+        width: 40px;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+    .nav{
+        height: 140px ;
+    }
+    #neptune #item9{
+        width: 250px;
     }
 }
