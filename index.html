@@ -10,18 +10,19 @@
 <body class="body" style="margin-top: 0%;">
     <section id="top">
         <div class="home-head">
-            <img src="./accests/logo.png" width="100px" alt="Cosmic Corner Logo">
+            <img src="./accests/logo.png" width="100px" id="logo" alt="Cosmic Corner Logo">
             <h1 style="margin-left: -100px;">COSMIC CORNER</h1>
         </div>
         <nav class="home-navbar">
             <a href="./index.html">HOME</a>
             <a href="./planets.html">PLANETS</a>
             <a href="./satellites.html">SATELLITES</a>
+            <a href="#explorer">EXPLORER</a>
             <a href="#footer">CONTACTS</a>
         </nav>
         <div class="content">
-            <img src="./accests/background.gif" alt="background gif" width="700px">
-            <h2>TAKING HUMANS TO SPACE</h2>
+            <img src="./accests/background.gif" alt="background gif" width="700px" id="circleimg">
+            <h2 id="space">TAKING HUMANS TO SPACE</h2>
             <p>
             The universe contains countless planets and moons, each playing a key role in the cosmic structure. Planets vary in size and composition, from rocky worlds like Earth to gas giants like Jupiter. Many exist in habitable zones where life might be possible. Moons orbit planets and differ in nature, with some potentially supporting life. Beyond our Solar System, exoplanets and their moons are being discovered, revealing an incredible diversity of worlds in the vast universe. These celestial bodies help us understand planetary formation and the potential for life. Our Cosmic corner will take you on a tour to space to explore Our solar system planets and Satellites.
             </p>
@@ -31,34 +32,58 @@
     <section id="Menu">
         <div class="menu-options">
             <div class="menu1"><h2>Planet Tour</h2><a href="./planets.html" target="_blank"><img src="./accests/ss.gif" alt="Planets" height="500px"></a></div>
-            <div class="menu2"><h2>Satellites</h2><a href="./satellites.html" target="_blank"><img src="./accests/satellite.gif" alt="Planets" height="500px"></a></div>
-            
-            
+            <div class="menu2"><h2>Satellites</h2><a href="./satellites.html" target="_blank"><img src="./accests/satellite.gif" alt="Satellite" height="500px"></a></div> 
         </div>
+    </section>
+    <section id="explorer">
+        <h1><u>Planet Explorer</u></h1>
+        <form class="planet-form" action="https://formspree.io/f/myzyakrw" method="post">
+            <label for="email">Your Email: </label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <label for="name">Your Name: </label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <br>
+            <label>Choose a Planet: </label>
+            <div class="radio-group">
+                <input type="radio" id="mercury" name="planet" value="Mercury"> <label for="mercury">Mercury</label>
+                <input type="radio" id="venus" name="planet" value="Venus"> <label for="venus">Venus</label>
+                <input type="radio" id="earth" name="planet" value="Earth"> <label for="earth">Earth</label>
+                <input type="radio" id="mars" name="planet" value="Mars"> <label for="mars">Mars</label>
+                <input type="radio" id="jupiter" name="planet" value="Jupiter"> <label for="jupiter">Jupiter</label>
+                <input type="radio" id="saturn" name="planet" value="Saturn"> <label for="saturn">Saturn</label>
+                <input type="radio" id="uranus" name="planet" value="Uranus"> <label for="uranus">Uranus</label>
+                <input type="radio" id="neptune" name="planet" value="Neptune"> <label for="neptune">Neptune</label>
+            </div>
+            <br>
+            <label for="question">What do you like to know?</label>
+            <input type="text" id="question" name="question" placeholder="Type your Question">
+            <br>
+            <button type="submit">Submit</button>
+        </form>        
     </section>
     <footer id="footer">
         <img src="./accests/logo.png" width="300px" alt="Cosmic Corner Logo">
         <h2>COSMIC CORNER</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK5KleZEL924mTx02FxuD1TMzqyIYSJXlKJJoD_TJ7PsiZQQ/viewform?embedded=true" width="640" height="1129" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         <div class="footer-container">
             <div class="footer-item">
                 <a href="https://www.linkedin.com/in/atifa-zainab-495655327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./accests/linkedin.png" width="70px" alt="linkedin"></a>
-                <p class="name">Atifa Zainab</p>
+                <p class="name"><em>Atifa Zainab</em></p>
                 <p>Satellite Page</p>
             </div>
             <div class="footer-item">
                 <a href="https://www.linkedin.com/in/jiya-wakde/" target="_blank"><img src="./accests/linkedin.png" width="70px" alt="linkedin"></a>
-                <p class="name">Jiya Wakde</p>
+                <p class="name"><em>Jiya Wakde</em></p>
                 <p>Home Page, Planet Page, and Satellite Page</p>
             </div>
             <div class="footer-item">
                 <a href="https://www.linkedin.com/in/khushi-kakde-986957326/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./accests/linkedin.png" width="70px" alt="linkedin"></a>
-                <p class="name">Khushi Kakde</p>
+                <p class="name"><em>Khushi Kakde</em></p>
                 <p>Home Page and Satellite Page</p>
             </div>
             <div class="footer-item">
                 <a href="https://www.linkedin.com/in/krupa-kale-638957326/" target="_blank"><img src="./accests/linkedin.png" width="70px" alt="linkedin"></a>
-                <p class="name">Krupa Kale</p>
+                <p class="name"><em>Krupa Kale</em></p>
                 <p>Home Page Footer</p>
             </div>
         </div>
