@@ -15,6 +15,7 @@
 
         /* Body Styles */
         body {
+            margin: 0%;
             font-family: 'Arial', sans-serif;
             background-color: #000000; /* Dark background for space theme */
             color: #fff; /* Light text for contrast */
@@ -141,10 +142,46 @@
                 height: auto;
             }
         }
-
+        .home-navbar a {
+            color: white;
+            padding: 0 15px; /* Reduce side padding for links */
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none; /* Remove underline from links */
+        }
+        .home-navbar a:hover {
+            color: rgb(182, 15, 43);
+        }
+        .home-navbar {
+            margin: 0;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            height: 70px;
+            padding: 0px 0; /* Adjust padding as needed */
+            background-image: linear-gradient(rgb(14, 14, 23), rgb(28, 28, 113));
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .home-head{
+            margin-top: 0%;
+            display: grid;
+            grid-template-columns: 200px auto;
+            place-items: center;
+        }
     </style>
 </head>
 <body>
+    <div class="home-head" style="background-color: black; margin-top: 0;">
+        <img src="./accests/logo.png" width="100px" id="logo" alt="Cosmic Corner Logo">
+        <h1 style="margin-left: -100px;">COSMIC CORNER</h1>
+    </div>
+    <nav class="home-navbar">
+        <a href="./index.html">HOME</a>
+        <a href="./planets.html">PLANETS</a>
+        <a href="./satellites.html">SATELLITES</a>
+        <a href="#explorer">EXPLORER</a>
+        <a href="#footer">CONTACTS</a>
+    </nav>
         <h1>SATELLITES</h1>
     
         <div class="gsat">
